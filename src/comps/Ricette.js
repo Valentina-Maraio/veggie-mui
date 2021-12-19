@@ -17,6 +17,7 @@ export default function TitlebarImageList() {
             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
+            onClick={infoButton}
           />
           <ImageListItemBar
             title={item.title}
@@ -36,6 +37,7 @@ export default function TitlebarImageList() {
   );
 }
 
+const infoButton = () => { alert('mi hai cliccato!')}
 const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
