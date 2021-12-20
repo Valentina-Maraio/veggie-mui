@@ -11,7 +11,7 @@ import Carte from './comps/Carte';
 
 function App() {
 
-  const API = "https://api.spoonacular.com/recipes/716429/information?apiKey=a17cec5d37b34e3bbd5666b6bd6e36cb"
+  const API = "https://api.spoonacular.com/recipes/complexSearch?apiKey=a17cec5d37b34e3bbd5666b6bd6e36cb"
   const [recipes, setRecipes ] = useState([]);
 
   const getRecipes = (API) => {
