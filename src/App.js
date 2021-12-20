@@ -3,11 +3,10 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 
 import Search from './comps/Search';
-import Carte from './comps/Carte';
 //import RandomMeal from './comps/RandomMeal';
 //import Ricette from './comps/Ricette';
-//import RandomFromWorld from './comps/RandomFromWorld';
-//import Recipes from './comps/Recipes';
+import RandomFromWorld from './comps/RandomFromWorld';
+import Recipes from './comps/Recipes';
 
 function App() {
 
@@ -27,11 +26,10 @@ function App() {
         <Search />
       </header>
       <div>
-        <Carte recipes={recipes} />
-      </div>
-      <div className="random">
       </div>
       <div className="world">
+        <RandomFromWorld />
+        <Recipes  recipes={recipes}/>
       </div>
     </div>
   );
