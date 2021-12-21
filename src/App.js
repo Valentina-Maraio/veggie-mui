@@ -3,8 +3,8 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 
 import Search from './comps/Search';
-//import RandomMeal from './comps/RandomMeal';
-//import Ricette from './comps/Ricette';
+import RandomMeal from './comps/RandomMeal';
+import Ricette from './comps/Ricette';
 import RandomFromWorld from './comps/RandomFromWorld';
 import Recipes from './comps/Recipes';
 
@@ -25,11 +25,13 @@ function App() {
         <h1>Ricette Vegetariane</h1>
         <Search />
       </header>
-      <div>
-      </div>
       <div className="world">
         <RandomFromWorld />
         <Recipes  recipes={recipes}/>
+      </div>
+      <div className="world">
+        <RandomMeal />
+        <Ricette  recipes={recipes}/>
       </div>
     </div>
   );
