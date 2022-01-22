@@ -3,14 +3,12 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 
 import Search from './comps/Search';
-import RandomMeal from './comps/RandomMeal';
-import Ricette from './comps/Ricette';
 import RandomFromWorld from './comps/RandomFromWorld';
 import Recipes from './comps/Recipes';
 
 function App() {
 
-  const API = "https://api.spoonacular.com/recipes/complexSearch?apiKey=a17cec5d37b34e3bbd5666b6bd6e36cb"
+  const API = "https://api.spoonacular.com/recipes/complexSearch?apiKey=a17cec5d37b34e3bbd5666b6bd6e36cb&sort=random"
   const [recipes, setRecipes ] = useState([]);
 
   const getRecipes = (API) => {
@@ -28,10 +26,6 @@ function App() {
       <div className="world">
         <RandomFromWorld />
         <Recipes  recipes={recipes}/>
-      </div>
-      <div className="world">
-        <RandomMeal />
-        <Ricette  recipes={recipes}/>
       </div>
     </div>
   );
