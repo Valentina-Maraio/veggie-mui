@@ -8,7 +8,7 @@ import Recipes from './comps/Recipes';
 
 function App() {
 
-  const API = "https://api.spoonacular.com/recipes/complexSearch?apiKey=a17cec5d37b34e3bbd5666b6bd6e36cb&sort=random"
+  const API = ""
   const [recipes, setRecipes ] = useState([]);
 
   const getRecipes = (API) => {
